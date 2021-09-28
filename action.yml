@@ -10,7 +10,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - $"--secrets {{inputs.secrets}}""
+    - "--secrets"
+    - $"{{inputs.secrets}}""
 
 branding:
   icon: 'eye-off'
