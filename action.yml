@@ -1,18 +1,18 @@
-name: 'paste-secret'
-description: 'Pastes you GitHub secrets to given places'
-author: 'Baris Can Yilmaz'
+name: "paste-secret"
+description: "Pastes you GitHub secrets to given places"
+author: "Baris Can Yilmaz"
 inputs:
   secrets: #id of input
     description: 'Replace secrets with given keys. Secrets definition is a json object [{"filename":"example.txt","keys":[{"key":"name","value":"baris"}]}]'
     required: true
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - "--secrets"
-    - $"{{inputs.secrets}}""
+    - "${{inputs.secrets}}"
 
 branding:
-  icon: 'eye-off'
-  color: 'blue'
+  icon: "eye-off"
+  color: "blue"
