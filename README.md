@@ -1,6 +1,6 @@
 # Paste-Secret
 
-Embed your GitHub Secrets in files
+Paste your GitHub Secrets in files
 
 # Usage
 
@@ -51,9 +51,13 @@ steps:
 steps:
 - uses: bariscanyilmaz/paste-secret@v1
     with:
-        secrets: |
+        secrets: >
         [
             {"filename": "setting.json","keys":[{ "key": "api","value":"192.168.2.1"}]},
             {"filename": "config.json","keys":[{ "key": "user","value":"admin"},{ "key": "passwd","value":"admin123456"}]}
         ]
 ```
+
+# Which Projects Using
+
+[YTU Dining Hall Telegrom Bot](https://github.com/bariscanyilmaz/ytuyemekhane-telegram-bot) 
