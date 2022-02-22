@@ -57,7 +57,3 @@ steps:
             {"filename": "config.json","keys":[{ "key": "user","value":"admin"},{ "key": "passwd","value":"admin123456"}]}
         ]
 ```
-
-# Which Projects Using
-
-[YTU Dining Hall Telegrom Bot](https://github.com/bariscanyilmaz/ytuyemekhane-telegram-bot) 
