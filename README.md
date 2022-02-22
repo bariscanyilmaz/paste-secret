@@ -14,12 +14,12 @@ Put your keys in curly braces `{{PARAMETER}}` in target file
 
 ## Examples
 
-## Singleline Example
-
+## Single line example
+`example.txt`
 ```txt
     Hello {{name}}
 ```
-
+`Usage In Action`
 ```yml
 steps:
 - uses:bariscanyilmaz/paste-secret@v1
@@ -28,7 +28,7 @@ steps:
 
 ```
 
-## Multiline Example
+## Multi line example
 
 `setting.json`
 ```json
@@ -41,11 +41,11 @@ steps:
 ```
 {
     "Username": "{{user}}",
-	"Password": "{{passwd}}",
+    "Password": "{{passwd}}",
 }
 ```
 
-## Usage In Action
+`Usage In Action`
 
 ```yml
 steps:
